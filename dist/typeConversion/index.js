@@ -1,3 +1,1 @@
-import nodeListToArray from './nodeListToArray';
-
-export { nodeListToArray };
+export { default as nodeListToArray } from './nodeListToArray';

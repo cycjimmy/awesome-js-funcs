@@ -1,3 +1,1 @@
-import entries from './entries';
-
-export { entries };
+export { default as entries } from './entries';

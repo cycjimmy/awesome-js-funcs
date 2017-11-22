@@ -1,5 +1,2 @@
-import getUrlRelativeDir from './getUrlRelativeDir';
+export { default as getUrlRelativeDir } from './getUrlRelativeDir';
 
-export {
-  getUrlRelativeDir,
-};

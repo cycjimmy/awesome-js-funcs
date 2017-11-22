@@ -1,7 +1,4 @@
-import firstUpperCase from './firstUpperCase';
-import midlineToCamel from './midlineToCamel';
+export { default as trim } from './trim';
+export { default as firstUpperCase } from './firstUpperCase';
+export { default as midlineToCamel } from './midlineToCamel';
 
-export {
-  firstUpperCase,
-  midlineToCamel,
-};

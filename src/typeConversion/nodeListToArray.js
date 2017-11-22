@@ -1,6 +1,6 @@
 import {
   isNodeList,
-} from '../judgeBasic'
+} from '../..'
 
 /**
  * nodeList转变为数组

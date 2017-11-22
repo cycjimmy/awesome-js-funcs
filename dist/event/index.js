@@ -1,3 +1,2 @@
-import dispatch from './dispatch';
-
-export { dispatch };
+export { default as dispatch } from './dispatch';
+export { default as preventDefault } from './preventDefault';

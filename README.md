@@ -28,6 +28,14 @@ $ npm install awesome-js-funcs --save
 $ yarn add awesome-js-funcs
 ```
 
+## Usage. E.g:
+```javascript
+import {
+  isString
+} from 'awesome-js-funcs';
+
+console.log(isString('string'));      // true
+```
 
 ## Function Collection
 * judgeBasic
@@ -36,16 +44,28 @@ $ yarn add awesome-js-funcs
   * `isFunction`
   * `isNodeList`
 * string
+  * `trim`
   * `firstUpperCase`
   * `midlineToCamel`
 * object
   * `entries`
+* math
+  * `randomInt`
 * typeConversion
   * `nodeListToArray`
-* domFilter
+* dom
   * `siblingFilter`
+  * `addStyles`
 * event
-  * `event`
+  * `dispatch`
+  * `preventDefault`
+* media
+  * `isAudioPlaying`
+  * `isVideoPlaying`
+* handheld
+  * `judgeOrientation`
+  * `isMobile`
+  * `getBrowserInfo`
 * designPattern
   * `CreateInstance` (constructor)
 * seldom

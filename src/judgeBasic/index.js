@@ -1,12 +1,5 @@
-import isString from './isString';
-import isObject from './isObject';
-import isFunction from './isFunction';
-import isNodeList from './isNodeList';
-
-export {
-  isString,
-  isObject,
-  isFunction,
-  isNodeList,
-};
+export { default as isString } from './isString';
+export { default as isObject } from './isObject';
+export { default as isFunction } from './isFunction';
+export { default as isNodeList } from './isNodeList';
 

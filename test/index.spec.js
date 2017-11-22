@@ -1,10 +1,6 @@
 import {
-  judgeBasic
-} from '../dist';
-
-import {
   isString
-} from '../dist/judgeBasic';
+} from '../dist';
 
 
 describe('default spec', () => {
@@ -14,7 +10,6 @@ describe('default spec', () => {
 
   test('default judge test', () => {
     expect(isString(string)).toBe(true);
-    expect(judgeBasic.isString(string)).toBe(true);
   });
 });
 

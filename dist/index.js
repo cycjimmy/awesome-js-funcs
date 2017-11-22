@@ -1,10 +1,21 @@
-import * as judgeBasic from './judgeBasic';
-import * as string from './string';
-import * as object from './object';
-import * as typeConversion from './typeConversion';
-import * as domFilter from './domFilter';
-import * as event from './event';
-import * as designPattern from './designPattern';
-import * as seldom from './seldom';
+export { isString, isObject, isFunction, isNodeList } from './judgeBasic';
 
-export { judgeBasic, string, object, typeConversion, domFilter, event, designPattern, seldom };
+export { trim, firstUpperCase, midlineToCamel } from './string';
+
+export { entries } from './object';
+
+export { randomInt } from './math';
+
+export { nodeListToArray } from './typeConversion';
+
+export { siblingFilter, addStyles } from './dom';
+
+export { dispatch, preventDefault } from './event';
+
+export { isAudioPlaying, isVideoPlaying } from './media';
+
+export { judgeOrientation, isMobile, getBrowserInfo } from './handheld';
+
+export { CreateInstance } from './designPattern';
+
+export { getUrlRelativeDir } from './seldom';

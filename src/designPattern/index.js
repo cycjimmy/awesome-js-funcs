@@ -1,5 +1,2 @@
-import CreateInstance from './CreateInstance';
+export { default as CreateInstance } from './CreateInstance';
 
-export {
-  CreateInstance,
-}
