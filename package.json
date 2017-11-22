@@ -1,0 +1,33 @@
+{
+  "name": "awesome-js-funcs",
+  "version": "0.0.1",
+  "description": "Personal collection of javascript functions often used.",
+  "main": "dist",
+  "scripts": {
+    "test": "jest",
+    "build": "trash dist && babel src -d dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cycdpo/awesome-js-funcs.git"
+  },
+  "keywords": [
+    "collection",
+    "javascript"
+  ],
+  "author": "cycjimmy <cycjimmy@gmail.com> (https://github.com/cycjimmy)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cycdpo/awesome-js-funcs/issues"
+  },
+  "homepage": "https://github.com/cycdpo/awesome-js-funcs#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^21.2.1",
+    "trash-cli": "^1.4.0"
+  }
+}
+
