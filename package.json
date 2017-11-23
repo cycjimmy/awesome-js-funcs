@@ -2,7 +2,7 @@
   "name": "awesome-js-funcs",
   "version": "0.0.2",
   "description": "Personal collection of javascript functions often used.",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "build": "trash dist && babel src -d dist",
