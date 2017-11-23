@@ -3,7 +3,6 @@
 [![NPM version][npm-image]][npm-url]
 [![David deps][david-image]][david-url]
 [![devDependencies Status][david-dev-image]][david-dev-url]
-[![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 [![npm license][license-image]][download-url]
 
@@ -13,8 +12,6 @@
 [david-url]: https://david-dm.org/cycdpo/awesome-js-funcs
 [david-dev-image]: https://david-dm.org/cycdpo/awesome-js-funcs/dev-status.svg?style=flat-square
 [david-dev-url]: https://david-dm.org/cycdpo/awesome-js-funcs?type=dev
-[node-image]: https://img.shields.io/badge/node.js-%3E=_6.0-green.svg?style=flat-square
-[node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/awesome-js-funcs.svg?style=flat-square
 [download-url]: https://npmjs.org/package/awesome-js-funcs
 [license-image]: https://img.shields.io/npm/l/awesome-js-funcs.svg?style=flat-square
@@ -32,7 +29,10 @@ $ yarn add awesome-js-funcs
 ```javascript
 import { isString } from 'awesome-js-funcs';
 
-// or better import (recommend)
+// or better import
+import { isString } from 'awesome-js-funcs/judgeBasic';
+
+// or best import (recommend)
 import isString from 'awesome-js-funcs/judgeBasic/isString';
 
 console.log(isString('string'));   // show true
