@@ -1,12 +1,13 @@
 {
   "name": "awesome-js-funcs",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Personal collection of javascript functions often used.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "build": "trash dist && babel src -d dist",
-    "prepublish": "npm run build"
+    "package": "npm run build && node ./modifyPackage.js && gulp copy",
+    "prepublish": "npm run package && git subtree push --prefix=dist origin npm-package"
   },
   "repository": {
     "type": "git",
@@ -26,8 +27,8 @@
     "babel-cli": "^6.26.0",
     "babel-jest": "^21.2.0",
     "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
     "jest": "^21.2.1",
     "trash-cli": "^1.4.0"
   }
 }
-

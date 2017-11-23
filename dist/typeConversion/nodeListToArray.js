@@ -1,4 +1,4 @@
-import { isNodeList } from '../..';
+import { default as isNodeList } from '../judgeBasic/isNodeList';
 
 /**
  * nodeList转变为数组

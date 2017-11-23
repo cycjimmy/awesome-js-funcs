@@ -30,11 +30,12 @@ $ yarn add awesome-js-funcs
 
 ## Usage. E.g:
 ```javascript
-import {
-  isString
-} from 'awesome-js-funcs';
+import { isString } from 'awesome-js-funcs';
 
-console.log(isString('string'));      // true
+// or better import (recommend)
+import isString from 'awesome-js-funcs/judgeBasic/isString';
+
+console.log(isString('string'));   // show true
 ```
 
 ## Function Collection
