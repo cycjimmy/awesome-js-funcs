@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "loose": true,
+        "modules": false
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "env"
+        ]
+      ]
+    }
+  },
+  "ignore": [
+    "node_modules"
+  ]
+}
