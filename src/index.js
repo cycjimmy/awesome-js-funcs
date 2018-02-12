@@ -2,7 +2,12 @@ export {
   isString,
   isObject,
   isFunction,
+  isArray,
+  isNull,
+  isUndefined,
+  isPromise,
   isNodeList,
+  isUrl,
 } from './judgeBasic';
 
 export {

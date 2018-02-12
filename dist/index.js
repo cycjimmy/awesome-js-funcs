@@ -1,4 +1,4 @@
-export { isString, isObject, isFunction, isNodeList } from './judgeBasic';
+export { isString, isObject, isFunction, isArray, isNull, isUndefined, isPromise, isNodeList, isUrl } from './judgeBasic';
 
 export { trim, firstUpperCase, midlineToCamel } from './string';
 

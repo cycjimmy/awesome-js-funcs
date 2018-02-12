@@ -1,7 +1,8 @@
 /**
  * 判断是否function
  * @param func
+ * @returns {boolean}
  */
 export default (function (func) {
-  return typeof func === 'function';
+  return Object.prototype.toString.call(func).slice(8, -1) === 'Function';
 });

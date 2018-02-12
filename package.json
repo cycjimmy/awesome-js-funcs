@@ -1,6 +1,6 @@
 {
   "name": "awesome-js-funcs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Personal collection of javascript functions often used.",
   "main": "dist/index.js",
   "scripts": {
