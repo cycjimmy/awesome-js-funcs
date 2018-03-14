@@ -43,7 +43,12 @@ console.log(isString('string'));   // show true
   * `isString`
   * `isObject`
   * `isFunction`
+  * `isArray`
+  * `isNull`
+  * `isUndefined`
+  * `isPromise`
   * `isNodeList`
+  * `isUrl`
 * string
   * `trim`
   * `firstUpperCase`
