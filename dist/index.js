@@ -10,7 +10,7 @@ export { nodeListToArray } from './typeConversion';
 
 export { siblingFilter, addStyles } from './dom';
 
-export { dispatch, preventDefault } from './event';
+export { dispatch, debounce, throttle, preventDefault } from './event';
 
 export { isAudioPlaying, isVideoPlaying } from './media';
 

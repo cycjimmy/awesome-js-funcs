@@ -64,6 +64,8 @@ console.log(isString('string'));   // show true
   * `addStyles`
 * event
   * `dispatch`
+  * `debounce`
+  * `throttle`
   * `preventDefault`
 * media
   * `isAudioPlaying`

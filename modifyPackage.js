@@ -25,7 +25,6 @@ fs.readFile('package.json', 'utf8', (err, data) => {
     delete json.devDependencies;
   }
 
-  // test1.name = "li";
-  sfinal = JSON.stringify(json);
+  sfinal = JSON.stringify(json, null, 2);
   fs.writeFileSync('dist/package.json', sfinal);
 });

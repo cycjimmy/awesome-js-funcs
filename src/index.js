@@ -35,6 +35,8 @@ export {
 
 export {
   dispatch,
+  debounce,
+  throttle,
   preventDefault,
 } from './event';
 
