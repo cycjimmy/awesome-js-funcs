@@ -6,22 +6,14 @@
 export default (function (obj) {
   var replaceFunc = function replaceFunc(obj) {
     var arr = [];
-    for (var _iterator = Object.keys(obj), _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
-      var _ref;
 
-      if (_isArray) {
-        if (_i >= _iterator.length) break;
-        _ref = _iterator[_i++];
-      } else {
-        _i = _iterator.next();
-        if (_i.done) break;
-        _ref = _i.value;
-      }
+    var _arr = Object.keys(obj);
 
-      var key = _ref;
-
+    for (var _i = 0; _i < _arr.length; _i++) {
+      var key = _arr[_i];
       arr.push([key, obj[key]]);
     }
+
     return arr;
   };
 

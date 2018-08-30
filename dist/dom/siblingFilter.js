@@ -4,8 +4,10 @@
  * @param className
  * @returns {*}
  */
-export default (function (el) {
-  var className = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
+export default (function (el, className) {
+  if (className === void 0) {
+    className = 'active';
+  }
 
   return Array.prototype.filter.call(el.parentNode.children, function (child) {
     return child.classList.contains(className);

@@ -4,11 +4,12 @@
  * @constructor
  */
 export default (function () {
-  var instance = void 0;
+  var instance;
   return function (newInstance) {
     if (newInstance) {
       instance = newInstance;
     }
+
     return instance;
   };
 });

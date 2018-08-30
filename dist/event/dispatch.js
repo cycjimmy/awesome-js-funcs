@@ -5,10 +5,18 @@
  * @param bubbles 是否冒泡
  * @param cancelable 是否可取消
  */
-export default (function (el) {
-  var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'click';
-  var bubbles = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
-  var cancelable = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+export default (function (el, type, bubbles, cancelable) {
+  if (type === void 0) {
+    type = 'click';
+  }
+
+  if (bubbles === void 0) {
+    bubbles = true;
+  }
+
+  if (cancelable === void 0) {
+    cancelable = false;
+  }
 
   try {
     var ev = document.createEvent('Event');

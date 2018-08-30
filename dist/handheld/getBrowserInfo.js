@@ -4,7 +4,6 @@
  */
 export default (function () {
   var ua = navigator.userAgent;
-
   return {
     userAgent: ua,
     isAndroid: /Android/ig.test(ua),
