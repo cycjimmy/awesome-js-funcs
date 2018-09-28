@@ -5,7 +5,9 @@
  */
 export default (element, styles) => {
   for (let name in styles) {
-    element.style[name] = styles[name];
+    if (styles.hasOwnProperty(name)) {
+      element.style[name] = styles[name];
+    }
   }
 };
 

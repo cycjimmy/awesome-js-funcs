@@ -62,6 +62,7 @@ console.log(isString('string'));   // show true
 * dom
   * `siblingFilter`
   * `addStyles`
+  * `addPreloadLink`
 * event
   * `dispatch`
   * `debounce`

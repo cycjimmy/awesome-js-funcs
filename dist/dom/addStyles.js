@@ -5,6 +5,8 @@
  */
 export default (function (element, styles) {
   for (var name in styles) {
-    element.style[name] = styles[name];
+    if (styles.hasOwnProperty(name)) {
+      element.style[name] = styles[name];
+    }
   }
 });
