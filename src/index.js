@@ -11,6 +11,11 @@ export {
 } from './judgeBasic';
 
 export {
+  isChineseName,
+  isChinesePhoneNumber,
+} from './judge';
+
+export {
   trim,
   firstUpperCase,
   midlineToCamel,

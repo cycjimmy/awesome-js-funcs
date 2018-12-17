@@ -1,9 +1,7 @@
-const
-  gulp = require('gulp')
-;
+const gulp = require('gulp');
 
 // copy
-gulp.task('copy', () => {
+gulp.task('copy', done => {
   gulp.src([
     '.gitattributes',
     '.gitignore',
@@ -11,5 +9,6 @@ gulp.task('copy', () => {
     'README.md',
   ])
     .pipe(gulp.dest('dist'));
+  done();
 });
 

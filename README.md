@@ -49,6 +49,9 @@ console.log(isString('string'));   // show true
   * `isPromise`
   * `isNodeList`
   * `isUrl`
+* judge
+  * `isChineseName`
+  * `isChinesePhoneNumber`
 * string
   * `trim`
   * `firstUpperCase`

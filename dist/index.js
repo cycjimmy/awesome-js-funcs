@@ -1,4 +1,5 @@
 export { isString, isObject, isFunction, isArray, isNull, isUndefined, isPromise, isNodeList, isUrl } from './judgeBasic';
+export { isChineseName, isChinesePhoneNumber } from './judge';
 export { trim, firstUpperCase, midlineToCamel } from './string';
 export { entries } from './object';
 export { randomInt } from './math';

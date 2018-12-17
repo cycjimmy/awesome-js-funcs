@@ -1,6 +1,6 @@
 {
   "name": "awesome-js-funcs",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Personal collection of javascript functions often used.",
   "main": "dist/index.js",
   "scripts": {
@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/cycdpo/awesome-js-funcs#readme",
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "gulp": "^3.9.1",
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "gulp": "^4.0.0",
     "trash-cli": "^1.4.0"
   }
 }
