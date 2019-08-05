@@ -62,6 +62,7 @@ console.log(isString('string'));   // show true
   * `randomInt`
 * typeConversion
   * `nodeListToArray`
+  * `functionToPromise`
 * dom
   * `siblingFilter`
   * `addStyles`

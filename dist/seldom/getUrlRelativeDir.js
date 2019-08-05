@@ -7,7 +7,8 @@ export default (function () {
       url = document.location.toString(),
       arrUrl = url.split("//"),
       start = arrUrl[1].indexOf("/"),
-      final = arrUrl[1].lastIndexOf("/");
-  relativeDir = arrUrl[1].substring(start, final);
+      _final = arrUrl[1].lastIndexOf("/");
+
+  relativeDir = arrUrl[1].substring(start, _final);
   return relativeDir;
 });

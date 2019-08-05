@@ -31,6 +31,7 @@ export {
 
 export {
   nodeListToArray,
+  functionToPromise,
 } from './typeConversion';
 
 export {

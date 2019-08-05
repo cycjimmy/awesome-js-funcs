@@ -1,10 +1,10 @@
 {
   "name": "awesome-js-funcs",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Personal collection of javascript functions often used.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "trash dist && npx babel src -d dist",
+    "build": "trash dist && npx babel src --out-dir dist",
     "package": "npm run build && node ./modifyPackage.js && gulp copy",
     "subtree": "npm run package && git subtree push --prefix=dist origin npm-package"
   },
@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/cycdpo/awesome-js-funcs#readme",
   "devDependencies": {
-    "@babel/cli": "^7.2.0",
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.0",
-    "gulp": "^4.0.0",
-    "trash-cli": "^1.4.0"
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "gulp": "^4.0.2",
+    "trash-cli": "^3.0.0"
   }
 }

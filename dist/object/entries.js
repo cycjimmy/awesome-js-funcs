@@ -7,10 +7,8 @@ export default (function (obj) {
   var replaceFunc = function replaceFunc(obj) {
     var arr = [];
 
-    var _arr = Object.keys(obj);
-
-    for (var _i = 0; _i < _arr.length; _i++) {
-      var key = _arr[_i];
+    for (var _i = 0, _Object$keys = Object.keys(obj); _i < _Object$keys.length; _i++) {
+      var key = _Object$keys[_i];
       arr.push([key, obj[key]]);
     }
 
