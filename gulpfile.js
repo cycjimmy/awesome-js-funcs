@@ -14,7 +14,7 @@ gulp.task('copy', done => {
 
   gulp.src([
     '.github/**/*',
-    '!.github/workflows/**/*',
+    '!.github/workflows/nodeTestCI.yml',
   ])
     .pipe(gulp.dest('dist/.github'));
 
