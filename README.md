@@ -6,34 +6,34 @@
 [![npm download][download-image]][download-url]
 [![npm license][license-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/awesome-js-funcs.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/awesome-js-funcs
-[david-image]: https://img.shields.io/david/cycdpo/awesome-js-funcs.svg?style=flat-square
-[david-url]: https://david-dm.org/cycdpo/awesome-js-funcs
-[david-dev-image]: https://david-dm.org/cycdpo/awesome-js-funcs/dev-status.svg?style=flat-square
-[david-dev-url]: https://david-dm.org/cycdpo/awesome-js-funcs?type=dev
-[download-image]: https://img.shields.io/npm/dm/awesome-js-funcs.svg?style=flat-square
-[download-url]: https://npmjs.org/package/awesome-js-funcs
-[license-image]: https://img.shields.io/npm/l/awesome-js-funcs.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/@cycjimmy/awesome-js-funcs.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@cycjimmy/awesome-js-funcs
+[david-image]: https://img.shields.io/david/cycjimmy/awesome-js-funcs.svg?style=flat-square
+[david-url]: https://david-dm.org/cycjimmy/awesome-js-funcs
+[david-dev-image]: https://david-dm.org/cycjimmy/awesome-js-funcs/dev-status.svg?style=flat-square
+[david-dev-url]: https://david-dm.org/cycjimmy/awesome-js-funcs?type=dev
+[download-image]: https://img.shields.io/npm/dm/@cycjimmy/awesome-js-funcs.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@cycjimmy/awesome-js-funcs
+[license-image]: https://img.shields.io/npm/l/@cycjimmy/awesome-js-funcs.svg?style=flat-square
 
 ## Install
 ```shell
 # via npm
-$ npm install awesome-js-funcs --save
+$ npm install @cycjimmy/awesome-js-funcs --save
 
 # or via yarn
-$ yarn add awesome-js-funcs
+$ yarn add @cycjimmy/awesome-js-funcs
 ```
 
 ## Usage. E.g:
 ```javascript
-import { isString } from 'awesome-js-funcs';
+import { isString } from '@cycjimmy/awesome-js-funcs';
 
 // or better import
-import { isString } from 'awesome-js-funcs/judgeBasic';
+import { isString } from '@cycjimmy/awesome-js-funcs/judgeBasic';
 
 // or best import (recommend)
-import isString from 'awesome-js-funcs/judgeBasic/isString';
+import isString from '@cycjimmy/awesome-js-funcs/judgeBasic/isString';
 
 console.log(isString('string'));   // show true
 ```
