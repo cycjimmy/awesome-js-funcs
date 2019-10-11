@@ -1,7 +1,7 @@
 name: Npm Package Publish
 
 on:
-  push:
+  deployment:
     branches:
       - npm-package
 
