@@ -1,12 +1,27 @@
 name: Npm Package Publish
 
 on:
-  deployment:
+  pull_request:
     branches:
-      - npm-package
+      - master
+  push:
+    branches:
+      - master
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm install -g yarn
+      - run: yarn install
+      - run: npm run package
+
   publish-npm:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -14,11 +29,15 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm publish --access public
+      - run: npm install -g yarn
+      - run: yarn install
+      - run: npm run package
+      - run: npm publish dist --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PACKAGE_TOKEN}}
 
   publish-gpr:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -27,6 +46,9 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
           scope: '@cycjimmy'
-      - run: npm publish
+      - run: npm install -g yarn
+      - run: yarn install
+      - run: npm run package
+      - run: npm publish dist
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
