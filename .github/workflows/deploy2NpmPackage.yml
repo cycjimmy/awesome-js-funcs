@@ -1,0 +1,18 @@
+name: Deploy To npm-package
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Deploy to npm-package
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: npm-package
+          FOLDER: dist
+          BUILD_SCRIPT: npm install -g yarn && yarn install && npm run package

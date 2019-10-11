@@ -1,12 +1,11 @@
 {
   "name": "@cycjimmy/awesome-js-funcs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal collection of javascript functions often used.",
   "main": "dist/index.js",
   "scripts": {
     "build": "trash dist && npx babel src --out-dir dist",
-    "package": "npm run build && node ./modifyPackage.js && gulp copy",
-    "subtree": "git subtree push --prefix=dist origin npm-package"
+    "package": "npm run build && node ./modifyPackage.js && gulp copy"
   },
   "repository": {
     "type": "git",
