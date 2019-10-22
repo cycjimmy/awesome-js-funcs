@@ -1,5 +1,4 @@
 # Awesome Js Funcs
-
 [![NPM version][npm-image]][npm-url]
 [![David deps][david-image]][david-url]
 [![devDependencies Status][david-dev-image]][david-dev-url]
