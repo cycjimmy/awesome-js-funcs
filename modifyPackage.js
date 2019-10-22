@@ -1,6 +1,4 @@
-const
-  fs = require('fs')
-;
+const fs = require('fs');
 
 fs.readFile('package.json', 'utf8', (err, data) => {
   if (err) {
@@ -23,6 +21,14 @@ fs.readFile('package.json', 'utf8', (err, data) => {
 
   if (json.devDependencies) {
     delete json.devDependencies;
+  }
+
+  if (json.publishConfig) {
+    delete json.publishConfig;
+  }
+
+  if (json.config) {
+    delete json.config;
   }
 
   sfinal = JSON.stringify(json, null, 2);
