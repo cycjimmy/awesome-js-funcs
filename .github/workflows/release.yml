@@ -19,6 +19,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build package
+        run: npm run package
+
       - name: Setup Node.js with GitHub Package Registry
         uses: actions/setup-node@v1
         with:

@@ -5,9 +5,10 @@ gulp.task('copy', done => {
   gulp.src([
     '.gitattributes',
     '.gitignore',
-    'LICENSE',
-    'README.md',
     '.npmignore',
+    'LICENSE',
+    'package-lock.json',
+    'README.md',
   ])
     .pipe(gulp.dest('dist'));
 
