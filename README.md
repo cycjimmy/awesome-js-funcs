@@ -1,19 +1,13 @@
 # Awesome Js Funcs
 [![NPM version][npm-image]][npm-url]
-[![David deps][david-image]][david-url]
-[![devDependencies Status][david-dev-image]][david-dev-url]
+[![NPM bundle size][npm-bundle-size-image]][npm-url]
 [![npm download][download-image]][download-url]
+![][workflows-badge-image]
+[![libraries dependency status][libraries-status-image]][libraries-status-url]
+[![libraries sourcerank][libraries-sourcerank-image]][libraries-sourcerank-url]
+[![Release date][release-date-image]][release-url]
+[![semantic-release][semantic-image]][semantic-url]
 [![npm license][license-image]][download-url]
-
-[npm-image]: https://img.shields.io/npm/v/@cycjimmy/awesome-js-funcs.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/@cycjimmy/awesome-js-funcs
-[david-image]: https://img.shields.io/david/cycjimmy/awesome-js-funcs.svg?style=flat-square
-[david-url]: https://david-dm.org/cycjimmy/awesome-js-funcs
-[david-dev-image]: https://david-dm.org/cycjimmy/awesome-js-funcs/dev-status.svg?style=flat-square
-[david-dev-url]: https://david-dm.org/cycjimmy/awesome-js-funcs?type=dev
-[download-image]: https://img.shields.io/npm/dm/@cycjimmy/awesome-js-funcs.svg?style=flat-square
-[download-url]: https://npmjs.org/package/@cycjimmy/awesome-js-funcs
-[license-image]: https://img.shields.io/npm/l/@cycjimmy/awesome-js-funcs.svg?style=flat-square
 
 ## Install
 ```shell
@@ -83,3 +77,25 @@ console.log(isString('string'));   // show true
 * seldom
   * `getUrlRelativeDir`
 
+<!-- Links: -->
+[npm-image]: https://img.shields.io/npm/v/@cycjimmy/awesome-js-funcs
+[npm-url]: https://npmjs.org/package/@cycjimmy/awesome-js-funcs
+[npm-bundle-size-image]: https://img.shields.io/bundlephobia/min/@cycjimmy/awesome-js-funcs
+
+[download-image]: https://img.shields.io/npm/dt/@cycjimmy/awesome-js-funcs
+[download-url]: https://npmjs.org/package/@cycjimmy/awesome-js-funcs
+
+[workflows-badge-image]: https://github.com/cycjimmy/awesome-js-funcs/workflows/Test%20CI/badge.svg
+
+[libraries-status-image]: https://img.shields.io/librariesio/release/npm/@cycjimmy/awesome-js-funcs
+[libraries-sourcerank-image]: https://img.shields.io/librariesio/sourcerank/npm/@cycjimmy/awesome-js-funcs
+[libraries-status-url]: https://libraries.io/github/cycjimmy/awesome-js-funcs
+[libraries-sourcerank-url]: https://libraries.io/npm/@cycjimmy%2Fawesome-js-funcs
+
+[release-date-image]: https://img.shields.io/github/release-date/cycjimmy/awesome-js-funcs
+[release-url]: https://github.com/cycjimmy/awesome-js-funcs/releases
+
+[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
+
+[license-image]: https://img.shields.io/npm/l/@cycjimmy/awesome-js-funcs

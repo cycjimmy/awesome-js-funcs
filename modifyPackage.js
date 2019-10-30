@@ -4,10 +4,8 @@ fs.readFile('package.json', 'utf8', (err, data) => {
   if (err) {
     console.log(err);
   }
-  let
-    json = JSON.parse(data)
-    , sfinal = ''
-  ;
+
+  let json = JSON.parse(data);
 
   json.main = 'index.js';
 
@@ -31,6 +29,6 @@ fs.readFile('package.json', 'utf8', (err, data) => {
     delete json.config;
   }
 
-  sfinal = JSON.stringify(json, null, 2);
-  fs.writeFileSync('dist/package.json', sfinal);
+  const sFinal = JSON.stringify(json, null, 2);
+  fs.writeFileSync('dist/package.json', sFinal);
 });
