@@ -8,9 +8,4 @@ module.exports = makeConfig({
   npmOptions: {
     pkgRoot: 'dist'
   },
-  git: true,
-  gitAssets: [
-    "package.json",
-    "package-lock.json"
-  ]
 });
