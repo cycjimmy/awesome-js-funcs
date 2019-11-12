@@ -1,7 +1,4 @@
 # Awesome Js Funcs
-[![NPM version][npm-image]][npm-url]
-[![NPM bundle size][npm-bundle-size-image]][npm-url]
-[![npm download][download-image]][download-url]
 ![][workflows-badge-image]
 [![libraries dependency status][libraries-status-image]][libraries-status-url]
 [![libraries sourcerank][libraries-sourcerank-image]][libraries-sourcerank-url]
@@ -10,6 +7,10 @@
 [![npm license][license-image]][download-url]
 
 ## Install
+[![NPM version][npm-image]][npm-url]
+[![NPM bundle size][npm-bundle-size-image]][npm-url]
+[![npm download][download-image]][download-url]
+
 ```shell
 # via npm
 $ npm install @cycjimmy/awesome-js-funcs --save
