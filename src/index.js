@@ -37,6 +37,7 @@ export {
 export {
   siblingFilter,
   addStyles,
+  getElementStyle,
   addPreloadLink,
 } from './dom';
 

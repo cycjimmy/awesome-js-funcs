@@ -60,6 +60,7 @@ console.log(isString('string'));   // show true
 * dom
   * `siblingFilter`
   * `addStyles`
+  * `getElementStyle`
   * `addPreloadLink`
 * event
   * `dispatch`
