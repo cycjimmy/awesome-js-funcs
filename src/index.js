@@ -19,7 +19,7 @@ export { entries } from './object';
 
 export { randomInt } from './math';
 
-export { nodeListToArray, functionToPromise } from './typeConversion';
+export { nodeListToArray, functionToPromise, stringTrueFalseToBoolean } from './typeConversion';
 
 export { siblingFilter, addStyles, getElementStyle, addPreloadLink } from './dom';
 
