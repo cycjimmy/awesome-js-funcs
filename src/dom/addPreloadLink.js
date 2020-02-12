@@ -6,13 +6,8 @@
  * @param as
  * @param type
  */
-export default ({
-                  rel = 'preload',
-                  href,
-                  as,
-                  type,
-                }) => {
-  let preloadLink = document.createElement('link');
+export default ({ rel = 'preload', href, as, type }) => {
+  const preloadLink = document.createElement('link');
   preloadLink.rel = rel;
   preloadLink.href = href;
 
@@ -26,4 +21,3 @@ export default ({
 
   document.head.appendChild(preloadLink);
 };
-

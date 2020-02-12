@@ -1,20 +1,8 @@
 /**
- * Judge Orientation
+ * judge orientation
  * @return {string}
  */
 export default () => {
-  let
-    clientWidth = document.documentElement.clientWidth
-    , clientHeight = document.documentElement.clientHeight
-    , result = ''
-  ;
-
-  if (clientWidth > clientHeight) {
-    result = 'landscape';
-  } else {
-    result = 'portrait';
-  }
-
-  return result;
+  const { clientWidth, clientHeight } = document.documentElement;
+  return clientWidth > clientHeight ? 'landscape' : 'portrait';
 };
-

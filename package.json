@@ -4,7 +4,8 @@
   "description": "Personal collection of javascript functions often used.",
   "main": "index.js",
   "scripts": {
-    "build": "trash dist && npx babel src --out-dir dist",
+    "lint": "eslint src --fix",
+    "build": "npm run lint && trash dist && npx babel src --out-dir dist",
     "package": "npm run build && node ./modifyPackage.js && gulp copy"
   },
   "repository": {
@@ -25,10 +26,11 @@
     "access": "public"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.2",
-    "@babel/preset-env": "^7.7.1",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
     "@cycjimmy/config-lib": "^1.5.0",
+    "eslint": "^6.8.0",
     "gulp": "^4.0.2",
     "trash-cli": "^3.0.0"
   }

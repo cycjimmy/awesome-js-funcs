@@ -2,5 +2,4 @@
  * isAudioPlaying
  * @param audio
  */
-export default audio => !audio.paused;
-
+export default (audio) => !audio.paused;

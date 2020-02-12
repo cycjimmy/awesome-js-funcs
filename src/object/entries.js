@@ -1,12 +1,12 @@
 /**
- * 遍历对象属性方法Object.entries的兼容方案
+ * compatibility scheme for traversing object property methods Object.entries
  * @param obj
  * @returns {Iterator.<*>|*}
  */
 export default (obj) => {
-  let replaceFunc = (obj) => {
-    let arr = [];
-    for (let key of Object.keys(obj)) {
+  const replaceFunc = (obj) => {
+    const arr = [];
+    for (const key of Object.keys(obj)) {
       arr.push([key, obj[key]]);
     }
     return arr;
@@ -14,8 +14,6 @@ export default (obj) => {
 
   if (Object.entries) {
     return Object.entries(obj);
-  } else {
-    return replaceFunc(obj);
   }
+  return replaceFunc(obj);
 };
-

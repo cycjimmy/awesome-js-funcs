@@ -1,12 +1,10 @@
 /**
- * 兄弟节点过滤器（主要用来选取同组中的激活对象）
+ * sibling filter（mainly used to select active objects in a same group）
  * @param el
  * @param className
  * @returns {*}
  */
-export default (el, className = 'active') => {
-  return Array.prototype.filter.call(el.parentNode.children, child => {
-    return child.classList.contains(className);
-  });
-};
-
+export default (el, className = 'active') =>
+  Array.prototype.filter.call(el.parentNode.children, (child) =>
+    child.classList.contains(className)
+  );

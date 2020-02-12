@@ -35,6 +35,7 @@ console.log(isString('string'));   // show true
 ## Function Collection
 * judgeBasic
   * `isString`
+  * `isNumber`
   * `isObject`
   * `isFunction`
   * `isArray`

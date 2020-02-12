@@ -1,7 +1,6 @@
 /**
- * 判断是否字符串
+ * determine a string type
  * @param str
  * @returns {boolean}
  */
-export default str => (typeof str === 'string') && str.constructor === String;
-
+export default (str) => typeof str === 'string' && str.constructor === String;

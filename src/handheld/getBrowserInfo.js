@@ -1,17 +1,17 @@
 /**
- * Get Browser Info
+ * get browser info
  * @return {{userAgent: string, isAndroid: boolean, isIphone: boolean, isIpad: boolean, isWeixin: boolean, isQQ: boolean, isWeibo: boolean}}
  */
 export default () => {
-  let ua = navigator.userAgent;
+  const ua = navigator.userAgent;
 
   return {
     userAgent: ua,
-    isAndroid: /Android/ig.test(ua),
-    isIphone: /iPhone|ipod/ig.test(ua),
-    isIpad: /iPad/ig.test(ua),
-    isWeixin: /MicroMessenger/ig.test(ua),
-    isQQ: /QQ/ig.test(ua),
-    isWeibo: /WeiBo/ig.test(ua),
+    isAndroid: /Android/gi.test(ua),
+    isIphone: /iPhone|ipod/gi.test(ua),
+    isIpad: /iPad/gi.test(ua),
+    isWeixin: /MicroMessenger/gi.test(ua),
+    isQQ: /QQ/gi.test(ua),
+    isWeibo: /WeiBo/gi.test(ua)
   };
-}
+};

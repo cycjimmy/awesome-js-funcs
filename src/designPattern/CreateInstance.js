@@ -1,5 +1,5 @@
 /**
- * 单例模式构造函数(设计模式)
+ * singleton constructor(design patterns)
  * @returns {function(*=)}
  * @constructor
  */
@@ -10,6 +10,5 @@ export default () => {
       instance = newInstance;
     }
     return instance;
-  }
+  };
 };
-

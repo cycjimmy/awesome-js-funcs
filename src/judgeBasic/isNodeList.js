@@ -1,6 +1,5 @@
 /**
- * 判断是否nodeList
+ * determine nodeList type
  * @param nodeList
  */
-export default nodeList => Object.prototype.toString.call(nodeList) === '[object NodeList]';
-
+export default (nodeList) => Object.prototype.toString.call(nodeList) === '[object NodeList]';

@@ -1,13 +1,13 @@
-import {default as isNodeList} from '../judgeBasic/isNodeList'
+import isNodeList from '../judgeBasic/isNodeList';
+import isArray from '../judgeBasic/isArray';
 
 /**
- * nodeList转变为数组
+ * nodeList into array
  * @param nodeList
  * @returns {Array}
  */
-export default nodeList => {
-
-  if (Array.isArray(nodeList)) {
+export default (nodeList) => {
+  if (isArray(nodeList)) {
     return nodeList;
   }
 
@@ -17,4 +17,3 @@ export default nodeList => {
 
   return Array.from ? Array.from(nodeList) : Array.prototype.slice.call(nodeList);
 };
-

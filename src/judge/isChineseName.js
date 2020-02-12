@@ -1,4 +1,5 @@
 /**
+ * is Chinese name
  * @param sName
  * @returns {boolean}
  */

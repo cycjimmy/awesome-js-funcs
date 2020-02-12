@@ -1,9 +1,8 @@
 /**
- * 中线命名转变成驼峰命名法
+ * mid-line nomenclature changed to camel case nomenclature
  * @param str
  */
-export default str => {
-  let re = /-(\w)/g;
+export default (str) => {
+  const re = /-(\w)/g;
   return str.replace(re, ($0, $1) => $1.toUpperCase());
 };
-

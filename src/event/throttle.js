@@ -1,26 +1,24 @@
 /**
- * 节流函数
- * @param func 真正函数
- * @param wait 下次调用函数等待时间
- * @param mustRun 在mustRun毫秒内必然执行一次
+ * throttling function
+ * @param func: real function
+ * @param wait: Wait time for next function call
+ * @param mustRun: must be executed once in mustRun milliseconds
  */
 export default (func, wait = 200, mustRun = 400) => {
-  let
-    timeout
-    , startTime = new Date()
-  ;
+  let timeout;
+  let startTime = new Date();
 
   return function () {
-    let curTime = new Date();
+    const curTime = new Date();
 
     clearTimeout(timeout);
 
     if (curTime - startTime >= mustRun) {
-      // 如果达到了规定的触发时间间隔，触发 handler
+      // If the specified trigger interval is reached, the handler is triggered
       func.apply(this, arguments);
       startTime = curTime;
     } else {
-      // 没达到触发间隔，重新设定定时器
+      // Trigger interval not reached, reset timer
       timeout = setTimeout(func, wait);
     }
   };

@@ -5,6 +5,4 @@
  * @returns {string}
  */
 export default (element, propertyName) =>
-  window.getComputedStyle(element, null)
-    .getPropertyValue(propertyName);
-
+  window.getComputedStyle(element, null).getPropertyValue(propertyName);

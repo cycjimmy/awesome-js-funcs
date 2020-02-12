@@ -1,4 +1,5 @@
 /**
+ * is Chinese phone number
  * @param sMobile
  * @returns {boolean}
  */

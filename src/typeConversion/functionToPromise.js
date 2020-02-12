@@ -1,4 +1,4 @@
-import {default as isPromise} from '../judgeBasic/isPromise';
+import isPromise from '../judgeBasic/isPromise';
 
 /**
  * function to promise
@@ -7,14 +7,13 @@ import {default as isPromise} from '../judgeBasic/isPromise';
  * @returns {Promise<any>}
  */
 export default (normalFunction, timeout = 0) => {
-
   if (isPromise(normalFunction)) {
     return normalFunction;
   }
 
-  return new Promise(resolve => {
+  // eslint-disable-next-line no-undef
+  return new Promise((resolve) => {
     normalFunction();
     setTimeout(resolve, timeout);
   });
 };
-
