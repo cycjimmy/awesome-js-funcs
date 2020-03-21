@@ -59,6 +59,7 @@ console.log(isString('string'));   // show true
   * `nodeListToArray`
   * `functionToPromise`
   * `stringTrueFalseToBoolean`
+  * `stringToJson`
 * dom
   * `siblingFilter`
   * `addStyles`
