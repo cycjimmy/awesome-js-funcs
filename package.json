@@ -26,12 +26,12 @@
     "access": "public"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@cycjimmy/config-lib": "^1.5.0",
-    "eslint": "^6.8.0",
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@cycjimmy/config-lib": "^1.6.1",
+    "eslint": "^7.11.0",
     "gulp": "^4.0.2",
-    "trash-cli": "^3.0.0"
+    "trash-cli": "^3.1.0"
   }
 }

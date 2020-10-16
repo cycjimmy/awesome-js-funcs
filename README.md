@@ -51,8 +51,11 @@ console.log(isString('string'));   // show true
   * `trim`
   * `firstUpperCase`
   * `midlineToCamel`
+* array
+  * `shuffle`
 * object
   * `entries`
+  * `clean`
 * math
   * `randomInt`
 * typeConversion
@@ -77,6 +80,8 @@ console.log(isString('string'));   // show true
   * `judgeOrientation`
   * `isMobile`
   * `getBrowserInfo`
+* function
+  * `delayForPromise`
 * designPattern
   * `CreateInstance` (constructor)
 * seldom
