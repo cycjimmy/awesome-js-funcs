@@ -1,6 +1,8 @@
+import chineseName from '../regExpression/chineseName';
+
 /**
  * is Chinese name
  * @param sName
  * @returns {boolean}
  */
-export default (sName) => /^[\u4e00-\u9fa5]{2,4}$/.test(sName);
+export default (sName) => chineseName().test(sName);

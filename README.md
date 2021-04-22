@@ -82,6 +82,9 @@ console.log(isString('string'));   // show true
   * `getBrowserInfo`
 * function
   * `delayForPromise`
+* regExpression
+  * `chineseName`
+  * `chinesePhoneNumber`
 * designPattern
   * `CreateInstance` (constructor)
 * seldom

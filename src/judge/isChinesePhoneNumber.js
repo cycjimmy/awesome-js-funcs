@@ -1,6 +1,8 @@
+import chinesePhoneNumber from '../regExpression/chinesePhoneNumber';
+
 /**
  * is Chinese phone number
  * @param sMobile
  * @returns {boolean}
  */
-export default (sMobile) => /^1[345789][0-9]\d{8}$/.test(sMobile);
+export default (sMobile) => chinesePhoneNumber().test(sMobile);

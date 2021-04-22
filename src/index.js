@@ -33,6 +33,8 @@ export { delayForPromise } from './function';
 
 export { judgeOrientation, isMobile, getBrowserInfo } from './handheld';
 
+export { chineseName, chinesePhoneNumber } from './regExpression';
+
 export { CreateInstance } from './designPattern';
 
 export { getUrlRelativeDir } from './seldom';
