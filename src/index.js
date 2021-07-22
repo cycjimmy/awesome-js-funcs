@@ -11,7 +11,7 @@ export {
   isUrl
 } from './judgeBasic';
 
-export { isChineseName, isChinesePhoneNumber } from './judge';
+export { isChineseName, isChinesePhoneNumber, isChineseIdentificationNum } from './judge';
 
 export { trim, firstUpperCase, midlineToCamel } from './string';
 
@@ -33,7 +33,7 @@ export { delayForPromise } from './function';
 
 export { judgeOrientation, isMobile, getBrowserInfo } from './handheld';
 
-export { chineseName, chinesePhoneNumber } from './regExpression';
+export { chineseName, chinesePhoneNumber, chineseIdentificationNum } from './regExpression';
 
 export { CreateInstance } from './designPattern';
 

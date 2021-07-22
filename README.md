@@ -47,6 +47,7 @@ console.log(isString('string'));   // show true
 * judge
   * `isChineseName`
   * `isChinesePhoneNumber`
+  * `isChineseIdentificationNum`
 * string
   * `trim`
   * `firstUpperCase`
@@ -85,6 +86,7 @@ console.log(isString('string'));   // show true
 * regExpression
   * `chineseName`
   * `chinesePhoneNumber`
+  * `chineseIdentificationNum`
 * designPattern
   * `CreateInstance` (constructor)
 * seldom
