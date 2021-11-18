@@ -2,11 +2,15 @@
   "name": "@cycjimmy/awesome-js-funcs",
   "version": "0.0.0-development",
   "description": "Personal collection of javascript functions often used.",
-  "main": "index.js",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
   "scripts": {
-    "lint": "eslint src --fix",
-    "build": "npm run lint && trash dist && npx babel src --out-dir dist",
-    "package": "npm run build && node ./modifyPackage.js && gulp copy"
+    "lint": "eslint -c .eslintrc .",
+    "lint:fix": "eslint --fix -c .eslintrc .",
+    "babel": "npx babel src --out-dir dist/esm",
+    "transform2cjs": "cross-env NODE_ENV=cjs npx babel dist/esm --out-dir dist/cjs",
+    "build": "npm run lint:fix && trash dist && npm run babel && npm run transform2cjs",
+    "package": "npm run build && node modifyPackage.mjs && gulp copy:package"
   },
   "repository": {
     "type": "git",
@@ -26,11 +30,14 @@
     "access": "public"
   },
   "devDependencies": {
-    "@babel/cli": "^7.14.8",
-    "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.14.8",
-    "@cycjimmy/config-lib": "^1.7.1",
-    "eslint": "^7.31.0",
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@cycjimmy/config-lib": "^1.8.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
     "gulp": "^4.0.2",
     "trash-cli": "^4.0.0"
   }

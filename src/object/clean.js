@@ -1,3 +1,5 @@
+/* eslint no-restricted-syntax: "off" */
+
 /**
  * object clean
  * @param obj

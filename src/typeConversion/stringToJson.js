@@ -1,8 +1,9 @@
-const _strToJsonFunc = (str) => (new Function('return ' + str))();
+/* eslint no-new-func: "off" */
+const strToJsonFunc = (str) => (new Function(`return ${str}`))();
 
 const strToJson = (str) => {
   try {
-    return _strToJsonFunc(str)
+    return strToJsonFunc(str);
   } catch (e) {
     return str;
   }

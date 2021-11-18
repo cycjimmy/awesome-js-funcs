@@ -8,7 +8,7 @@ export {
   isUndefined,
   isPromise,
   isNodeList,
-  isUrl
+  isUrl,
 } from './judgeBasic';
 
 export { isChineseName, isChinesePhoneNumber, isChineseIdentificationNum } from './judge';
@@ -21,11 +21,17 @@ export { entries, clean } from './object';
 
 export { randomInt } from './math';
 
-export { nodeListToArray, functionToPromise, stringTrueFalseToBoolean, stringToJson } from './typeConversion';
+export {
+  nodeListToArray, functionToPromise, stringTrueFalseToBoolean, stringToJson,
+} from './typeConversion';
 
-export { siblingFilter, addStyles, getElementStyle, addPreloadLink } from './dom';
+export {
+  siblingFilter, addStyles, getElementStyle, addPreloadLink,
+} from './dom';
 
-export { dispatch, debounce, throttle, preventDefault } from './event';
+export {
+  dispatch, debounce, throttle, preventDefault,
+} from './event';
 
 export { isAudioPlaying, isVideoPlaying } from './media';
 

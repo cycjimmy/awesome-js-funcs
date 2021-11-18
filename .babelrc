@@ -3,8 +3,23 @@
     [
       "@babel/preset-env",
       {
-        "modules": "commonjs"
+        "modules": false,
+        "targets": {
+          "esmodules": true
+        }
       }
     ]
-  ]
+  ],
+  "env": {
+    "cjs": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "modules": "commonjs"
+          }
+        ]
+      ]
+    }
+  }
 }

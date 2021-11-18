@@ -1,6 +1,17 @@
 /**
  * get browser info
- * @returns {{isIpad: boolean, isWeixin: boolean, isEdge: boolean, isIE: boolean, ieVersion: string, userAgent: string, isIphone: boolean, isQQ: boolean, isWeibo: boolean, isAndroid: boolean}}
+ * @returns {{
+ *   isIpad: boolean,
+ *   isWeixin: boolean,
+ *   isEdge: boolean,
+ *   isIE: boolean,
+ *   ieVersion: string,
+ *   userAgent: string,
+ *   isIphone: boolean,
+ *   isQQ: boolean,
+ *   isWeibo: boolean,
+ *   isAndroid: boolean
+ * }}
  */
 export default () => {
   const ua = navigator.userAgent;
@@ -28,9 +39,9 @@ export default () => {
       }
 
       if (isIE) {
-        const reIE = new RegExp('MSIE (\\d+\\.\\d+);');
+        const reIE = /MSIE (\d+\.\d+);/;
         reIE.test(ua);
-        const fIEVersion = parseFloat(RegExp['$1']);
+        const fIEVersion = parseFloat(RegExp.$1);
 
         switch (fIEVersion) {
           case 6:
@@ -38,14 +49,14 @@ export default () => {
           case 8:
           case 9:
           case 10:
-            return fIEVersion + '';
+            return `${fIEVersion}`;
 
           default:
-            return '<6'
+            return '<6';
         }
       }
 
       return '-1';
-    })()
+    })(),
   };
 };

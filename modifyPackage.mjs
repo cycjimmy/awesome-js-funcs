@@ -1,13 +1,11 @@
-const fs = require('fs');
+import {readFile, writeFileSync} from 'fs';
 
-fs.readFile('package.json', 'utf8', (err, data) => {
+readFile('package.json', 'utf8', (err, data) => {
   if (err) {
     console.log(err);
   }
 
-  let json = JSON.parse(data);
-
-  json.main = 'index.js';
+  const json = JSON.parse(data);
 
   if (json.scripts) {
     delete json.scripts;
@@ -30,5 +28,5 @@ fs.readFile('package.json', 'utf8', (err, data) => {
   }
 
   const sFinal = JSON.stringify(json, null, 2);
-  fs.writeFileSync('dist/package.json', sFinal);
+  writeFileSync('dist/package.json', sFinal);
 });

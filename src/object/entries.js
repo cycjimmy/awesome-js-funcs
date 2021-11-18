@@ -4,11 +4,11 @@
  * @returns {Iterator.<*>|*}
  */
 export default (obj) => {
-  const replaceFunc = (obj) => {
+  const replaceFunc = (o) => {
     const arr = [];
-    for (const key of Object.keys(obj)) {
-      arr.push([key, obj[key]]);
-    }
+    Object.keys(o).forEach((key) => {
+      arr.push([key, o[key]]);
+    });
     return arr;
   };
 

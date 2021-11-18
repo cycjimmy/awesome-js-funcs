@@ -10,10 +10,10 @@ export default (array = []) => {
 
   while (m) {
     m -= 1;
-    const _random = randomInt(0, m);
+    const random = randomInt(0, m);
 
     // change
-    [array[m], array[_random]] = [array[_random], array[m]];
+    [array[m], array[random]] = [array[random], array[m]];
   }
 
   return array;

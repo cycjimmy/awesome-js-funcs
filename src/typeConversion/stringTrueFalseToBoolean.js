@@ -1,6 +1,6 @@
 const boolMap = {
   true: true,
-  false: false
+  false: false,
 };
 
 /**

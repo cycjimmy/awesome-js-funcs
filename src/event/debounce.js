@@ -1,3 +1,5 @@
+/* eslint func-names: "off", prefer-rest-params: "off" */
+
 /**
  * debounce function
  * @param func: real function
