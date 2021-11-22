@@ -68,10 +68,13 @@ console.log(isString('string'));   // show true
   * `stringTrueFalseToBoolean`
   * `stringToJson`
 * dom
+  * `QueryAll` (constructor)
   * `siblingFilter`
   * `addStyles`
   * `getElementStyle`
   * `addPreloadLink`
+  * `touchActive`
+  * `touchActiveMockClick`
 * event
   * `dispatch`
   * `debounce`

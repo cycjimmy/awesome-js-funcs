@@ -26,7 +26,13 @@ export {
 } from './typeConversion';
 
 export {
-  siblingFilter, addStyles, getElementStyle, addPreloadLink,
+  QueryAll,
+  siblingFilter,
+  addStyles,
+  getElementStyle,
+  addPreloadLink,
+  touchActive,
+  touchActiveMockClick,
 } from './dom';
 
 export {
