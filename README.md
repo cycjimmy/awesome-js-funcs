@@ -30,7 +30,7 @@ const { isString } = require('@cycjimmy/awesome-js-funcs/cjs/judgeBasic');
 
 // or best import (recommend)
 import isString from '@cycjimmy/awesome-js-funcs/esm/judgeBasic/isString';
-const isString = require('@cycjimmy/awesome-js-funcs/cjs/judgeBasic/isString').default;
+const isString = require('@cycjimmy/awesome-js-funcs/cjs/judgeBasic/isString.cjs').default;
 
 console.log(isString('string'));   // show true
 ```
