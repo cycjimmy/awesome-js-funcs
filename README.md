@@ -22,11 +22,9 @@ $ yarn add @cycjimmy/awesome-js-funcs
 ## Usage. E.g:
 ```javascript
 import { isString } from '@cycjimmy/awesome-js-funcs';
-const { isString } = require('@cycjimmy/awesome-js-funcs');
 
 // or better import
 import { isString } from '@cycjimmy/awesome-js-funcs/esm/judgeBasic';
-const { isString } = require('@cycjimmy/awesome-js-funcs/cjs/judgeBasic');
 
 // or best import (recommend)
 import isString from '@cycjimmy/awesome-js-funcs/esm/judgeBasic/isString';
