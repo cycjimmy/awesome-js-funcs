@@ -1,4 +1,4 @@
-import {readFile, writeFileSync} from 'fs';
+import { readFile, writeFileSync } from 'fs';
 
 readFile('package.json', 'utf8', (err, data) => {
   if (err) {
