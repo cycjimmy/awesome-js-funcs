@@ -9,9 +9,10 @@
     "lint": "eslint -c .eslintrc .",
     "lint:fix": "eslint --fix -c .eslintrc .",
     "babel": "npx babel src --out-dir dist/esm",
-    "transform2cjs": "cross-env NODE_ENV=cjs npx babel dist/esm --out-dir dist/cjs --out-file-extension .cjs",
+    "handleExtensionCJS": "node ./tasks/handleExtensionCJS.js",
+    "transform2cjs": "cross-env NODE_ENV=cjs npx babel dist/esm --out-dir dist/cjs --out-file-extension .cjs && npm run handleExtensionCJS",
     "build": "npm run lint:fix && trash dist && npm run babel && npm run transform2cjs",
-    "package": "npm run build && node modifyPackage.js && gulp copy:package"
+    "package": "npm run build && node ./tasks/modifyPackage.js && gulp copy:package"
   },
   "repository": {
     "type": "git",
