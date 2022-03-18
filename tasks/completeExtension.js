@@ -97,7 +97,7 @@ Promise.resolve()
             return `${$1} ${$2} from '${$3}.js'`;
           }
 
-          return $0;
+          return `${$1} ${$2} from '${$3}/index.js'`;
         },
       ),
     }),
