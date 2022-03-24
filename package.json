@@ -5,10 +5,6 @@
   "type": "module",
   "main": "cjs/index.cjs",
   "module": "esm/index.js",
-  "exports": {
-    "require": "./cjs/index.cjs",
-    "import": "./esm/index.js"
-  },
   "scripts": {
     "lint": "eslint -c .eslintrc .",
     "lint:fix": "eslint --fix -c .eslintrc .",
