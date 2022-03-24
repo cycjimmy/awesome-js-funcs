@@ -1,4 +1,5 @@
 /* eslint no-restricted-syntax: "off" */
+/* eslint no-param-reassign: "off" */
 
 /**
  * object clean

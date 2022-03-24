@@ -3,16 +3,20 @@
   "version": "0.0.0-development",
   "description": "Personal collection of javascript functions often used.",
   "type": "module",
-  "main": "cjs/index.js",
+  "main": "cjs/index.cjs",
   "module": "esm/index.js",
+  "exports": {
+    "require": "./cjs/index.cjs",
+    "import": "./esm/index.js"
+  },
   "scripts": {
     "lint": "eslint -c .eslintrc .",
     "lint:fix": "eslint --fix -c .eslintrc .",
-    "babel": "npx babel src --out-dir dist/esm",
-    "transform2cjs": "cross-env NODE_ENV=cjs npx babel dist/esm --out-dir dist/cjs --out-file-extension .cjs",
+    "babel": "npx babel src --out-dir .release/esm",
+    "transform2cjs": "cross-env NODE_ENV=cjs npx babel .release/esm --out-dir .release/cjs --out-file-extension .cjs",
     "completeExtension": "node tasks/completeExtension.js",
-    "build": "npm run lint:fix && trash dist && npm run babel && npm run transform2cjs && npm run completeExtension",
-    "package": "npm run build && node ./tasks/modifyPackage.js && gulp copy:package"
+    "build": "npm run lint:fix && trash .release && npm run babel && npm run transform2cjs && npm run completeExtension",
+    "package": "npm run build && node tasks/copyFiles.js && node tasks/handlePackageJson.js"
   },
   "repository": {
     "type": "git",
@@ -33,14 +37,14 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.7",
+    "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
-    "@cycjimmy/config-lib": "^3.0.2",
+    "@cycjimmy/config-lib": "^3.1.2",
     "cross-env": "^7.0.3",
     "eslint": "^8.11.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
-    "gulp": "^4.0.2",
+    "fs-extra": "^10.0.1",
     "trash-cli": "^5.0.0"
   }
 }

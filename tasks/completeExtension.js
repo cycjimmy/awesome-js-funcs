@@ -59,7 +59,7 @@ const handleTask = ({
 Promise.resolve()
   .then(() => Promise.all([
     handleTask({
-      dir: path.resolve('dist', 'cjs'),
+      dir: path.resolve('.release', 'cjs'),
       handleData: (data, fileFullPath) => data.replaceAll(
         /require\("(.+)"\)/g,
         ($0, $1) => {
@@ -81,7 +81,7 @@ Promise.resolve()
     }),
 
     handleTask({
-      dir: path.resolve('dist', 'esm'),
+      dir: path.resolve('.release', 'esm'),
       handleData: (data, fileFullPath) => data.replaceAll(
         /(\w\wport)\s(.+)\sfrom\s'(.+)'/g,
         ($0, $1, $2, $3) => {

@@ -6,15 +6,16 @@ import randomInt from '../math/randomInt';
  * @returns {*[]}
  */
 export default (array = []) => {
-  let m = array.length;
+  const arrayClone = [...array];
+  let m = arrayClone.length;
 
   while (m) {
     m -= 1;
     const random = randomInt(0, m);
 
     // change
-    [array[m], array[random]] = [array[random], array[m]];
+    [arrayClone[m], arrayClone[random]] = [arrayClone[random], arrayClone[m]];
   }
 
-  return array;
+  return arrayClone;
 };

@@ -47,6 +47,7 @@ export default class QueryAll {
       if (el.classList) {
         el.classList.add(className);
       } else {
+        // eslint-disable-next-line no-param-reassign
         el.className += ` ${className}`;
       }
     });
@@ -64,6 +65,7 @@ export default class QueryAll {
       if (el.classList) {
         el.classList.remove(className);
       } else {
+        // eslint-disable-next-line no-param-reassign
         el.className = el.className.replace(new RegExp(`(^|\\b)${className.split(' ').join('|')}(\\b|$)`, 'gi'), ' ');
       }
     });

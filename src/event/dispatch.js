@@ -11,6 +11,7 @@ export default (el, type = 'click', bubbles = true, cancelable = false) => {
     ev.initEvent(type, bubbles, cancelable);
     el.dispatchEvent(ev);
   } catch (e) {
+    // eslint-disable-next-line no-console
     console.error(e);
   }
 };

@@ -8,6 +8,7 @@ import entries from '../object/entries';
 export default (element, styles) => {
   entries(styles).forEach(([k, v]) => {
     if (Object.prototype.hasOwnProperty.call(styles, k)) {
+      // eslint-disable-next-line no-param-reassign
       element.style[k] = v;
     }
   });
