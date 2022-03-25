@@ -1,3 +1,4 @@
+/* eslint no-console: 0 */
 import path from 'path';
 import {
   existsSync, lstatSync, readdirSync, readFile, writeFile,
@@ -101,4 +102,7 @@ Promise.resolve()
         },
       ),
     }),
-  ]));
+  ]))
+  .then(() => {
+    console.log('completeExtension success!');
+  });

@@ -6,10 +6,6 @@ import fs from 'fs-extra';
 const { copySync } = fs;
 
 copySync(
-  path.resolve('src'),
-  path.resolve('.release', 'esm'),
-);
-copySync(
   path.resolve('README.md'),
   path.resolve('.release', 'README.md'),
 );
