@@ -1,3 +1,10 @@
+## [4.0.8](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.7...v4.0.8) (2022-03-25)
+
+
+### Bug Fixes
+
+* fix root version after releasing ([4b3a515](https://github.com/cycjimmy/awesome-js-funcs/commit/4b3a515c990b18ed0bbc6106bc0e2e2549b3857e))
+
 ## [4.0.7](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.6...v4.0.7) (2022-03-25)
 
 

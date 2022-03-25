@@ -1,6 +1,6 @@
 {
   "name": "@cycjimmy/awesome-js-funcs",
-  "version": "0.0.0-development",
+  "version": "4.0.8",
   "description": "Personal collection of javascript functions often used.",
   "type": "module",
   "main": "cjs/index.cjs",
