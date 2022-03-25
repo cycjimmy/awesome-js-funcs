@@ -1,3 +1,10 @@
+## [4.0.7](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.6...v4.0.7) (2022-03-25)
+
+
+### Bug Fixes
+
+* fix esm extension js ([949a317](https://github.com/cycjimmy/awesome-js-funcs/commit/949a317691fac432368f80f395cce868c2fc9b90))
+
 ## [4.0.6](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.5...v4.0.6) (2022-03-24)
 
 
