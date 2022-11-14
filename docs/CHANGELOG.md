@@ -1,3 +1,10 @@
+## [4.0.9](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.8...v4.0.9) (2022-11-14)
+
+
+### Bug Fixes
+
+* fix regExpression for chinesePhoneNumber ([e3fdb58](https://github.com/cycjimmy/awesome-js-funcs/commit/e3fdb585be17e80506fd169ae337eb19d32822c8))
+
 ## [4.0.8](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.7...v4.0.8) (2022-03-25)
 
 
