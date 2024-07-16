@@ -1,8 +1,8 @@
 /**
  * throttling function
- * @param func: real function
- * @param wait: Wait time for next function call
- * @param mustRun: must be executed once in mustRun milliseconds
+ * @param func real function
+ * @param wait Wait time for next function call
+ * @param mustRun must be executed once in mustRun milliseconds
  */
 export default (func, wait = 200, mustRun = 400) => {
   let timeout;

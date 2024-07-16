@@ -1,9 +1,9 @@
 /**
  * dispatch event trigger
- * @param el: element
- * @param type: event type
- * @param bubbles: whether bubbling
- * @param cancelable: cancelable
+ * @param el element
+ * @param type event type
+ * @param bubbles whether bubbling
+ * @param cancelable cancelable
  */
 export default (el, type = 'click', bubbles = true, cancelable = false) => {
   try {

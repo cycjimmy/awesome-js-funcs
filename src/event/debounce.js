@@ -2,9 +2,9 @@
 
 /**
  * debounce function
- * @param func: real function
- * @param wait: wait time for next function call
- * @param immediate: whether to execute function immediately
+ * @param func real function
+ * @param wait wait time for next function call
+ * @param immediate whether to execute function immediately
  */
 export default (func, wait = 300, immediate = false) => {
   let timeout;

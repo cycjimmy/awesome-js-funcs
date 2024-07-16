@@ -3,7 +3,7 @@ import entries from '../object/entries';
 /**
  * element add styles
  * @param element
- * @param styles(obj)
+ * @param styles (obj)
  */
 export default (element, styles) => {
   entries(styles).forEach(([k, v]) => {
