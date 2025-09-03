@@ -36,7 +36,7 @@
     "@babel/core": "^7.24.9",
     "@babel/preset-env": "^7.24.8",
     "@cycjimmy/config-lib": "^3.2.1",
-    "cross-env": "^7.0.3",
+    "cross-env": "^10.0.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
