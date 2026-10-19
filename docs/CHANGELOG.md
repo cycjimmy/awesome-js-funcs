@@ -1,3 +1,10 @@
+## [4.0.10](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.9...v4.0.10) (2026-10-19)
+
+
+### Bug Fixes
+
+* **ci:** 升级 GitHub Actions 工作流并改用 OIDC 发布 ([1f5ed5e](https://github.com/cycjimmy/awesome-js-funcs/commit/1f5ed5ebee5533b305d89966afe59e71cbf4ee07))
+
 ## [4.0.9](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.8...v4.0.9) (2022-11-14)
 
 
