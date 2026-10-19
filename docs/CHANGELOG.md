@@ -1,3 +1,10 @@
+## [4.0.11](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.10...v4.0.11) (2026-10-19)
+
+
+### Bug Fixes
+
+* **ci:** skip npm auth verification in dry-run tests ([d2a021c](https://github.com/cycjimmy/awesome-js-funcs/commit/d2a021c8aa6f390f7215ca26eeb429c3fee319b0))
+
 ## [4.0.10](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.9...v4.0.10) (2026-10-19)
 
 
