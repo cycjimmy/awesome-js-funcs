@@ -1,1 +1,1 @@
-export { default as randomInt } from './randomInt';
+export { default as randomInt } from './randomInt.js'

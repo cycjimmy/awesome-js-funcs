@@ -1,4 +1,4 @@
-export { default as dispatch } from './dispatch';
-export { default as debounce } from './debounce';
-export { default as throttle } from './throttle';
-export { default as preventDefault } from './preventDefault';
+export { default as debounce } from './debounce.js'
+export { default as dispatch } from './dispatch.js'
+export { default as preventDefault } from './preventDefault.js'
+export { default as throttle } from './throttle.js'

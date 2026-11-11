@@ -1,8 +1,8 @@
-import chineseName from '../regExpression/chineseName';
+import chineseName from '../regExpression/chineseName.js'
 
 /**
  * is Chinese name
  * @param sName
  * @returns {boolean}
  */
-export default (sName) => chineseName().test(sName);
+export default sName => chineseName().test(sName)

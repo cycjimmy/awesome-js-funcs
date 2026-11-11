@@ -1,52 +1,58 @@
-export {
-  isString,
-  isNumber,
-  isObject,
-  isFunction,
-  isArray,
-  isNull,
-  isUndefined,
-  isPromise,
-  isNodeList,
-  isUrl,
-} from './judgeBasic';
+export { shuffle } from './array/index.js'
 
-export { isChineseName, isChinesePhoneNumber, isChineseIdentificationNum } from './judge';
-
-export { trim, firstUpperCase, midlineToCamel } from './string';
-
-export { shuffle } from './array';
-
-export { entries, clean } from './object';
-
-export { randomInt } from './math';
+export { CreateInstance } from './designPattern/index.js'
 
 export {
-  nodeListToArray, functionToPromise, stringTrueFalseToBoolean, stringToJson,
-} from './typeConversion';
-
-export {
-  QueryAll,
-  siblingFilter,
+  addPreloadLink,
   addStyles,
   getElementStyle,
-  addPreloadLink,
+  QueryAll,
+  siblingFilter,
   touchActive,
   touchActiveMockClick,
-} from './dom';
+} from './dom/index.js'
 
 export {
-  dispatch, debounce, throttle, preventDefault,
-} from './event';
+  debounce,
+  dispatch,
+  preventDefault,
+  throttle,
+} from './event/index.js'
 
-export { isAudioPlaying, isVideoPlaying } from './media';
+export { delayForPromise } from './function/index.js'
 
-export { delayForPromise } from './function';
+export { getBrowserInfo, isMobile, judgeOrientation } from './handheld/index.js'
 
-export { judgeOrientation, isMobile, getBrowserInfo } from './handheld';
+export { isChineseIdentificationNum, isChineseName, isChinesePhoneNumber } from './judge/index.js'
 
-export { chineseName, chinesePhoneNumber, chineseIdentificationNum } from './regExpression';
+export {
+  isArray,
+  isFunction,
+  isNodeList,
+  isNull,
+  isNumber,
+  isObject,
+  isPromise,
+  isString,
+  isUndefined,
+  isUrl,
+} from './judgeBasic/index.js'
 
-export { CreateInstance } from './designPattern';
+export { randomInt } from './math/index.js'
 
-export { getUrlRelativeDir } from './seldom';
+export { isAudioPlaying, isVideoPlaying } from './media/index.js'
+
+export { clean, entries } from './object/index.js'
+
+export { chineseIdentificationNum, chineseName, chinesePhoneNumber } from './regExpression/index.js'
+
+export { getUrlRelativeDir } from './seldom/index.js'
+
+export { firstUpperCase, midlineToCamel, trim } from './string/index.js'
+
+export {
+  functionToPromise,
+  nodeListToArray,
+  stringToJson,
+  stringTrueFalseToBoolean,
+} from './typeConversion/index.js'

@@ -4,11 +4,11 @@
  * @constructor
  */
 export default () => {
-  let instance;
+  let instance
   return (newInstance) => {
     if (newInstance) {
-      instance = newInstance;
+      instance = newInstance
     }
-    return instance;
-  };
-};
+    return instance
+  }
+}

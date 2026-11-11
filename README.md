@@ -1,5 +1,5 @@
 # Awesome Js Funcs
-![][workflows-badge-image]
+![Test CI status][workflows-badge-image]
 [![libraries dependency status][libraries-status-image]][libraries-status-url]
 [![libraries sourcerank][libraries-sourcerank-image]][libraries-sourcerank-url]
 [![Release date][release-date-image]][release-url]
@@ -19,19 +19,44 @@ $ npm install @cycjimmy/awesome-js-funcs --save
 $ yarn add @cycjimmy/awesome-js-funcs
 ```
 
-## Usage. E.g:
+## Usage
+
+The package ships plain ESM: `main`, `module` and `exports` all point at
+`dist/`, and there is no CommonJS build. `require()` keeps working on Node.js
+`^22.18.0` or `>=24.11.0` through the built-in `require(esm)` support; older
+runtimes have to use `import()`.
+
 ```javascript
-import { isString } from '@cycjimmy/awesome-js-funcs';
+import isString from '@cycjimmy/awesome-js-funcs/judgeBasic/isString'
 
-// or better import
-import { isString } from '@cycjimmy/awesome-js-funcs/esm/judgeBasic';
-
-// or best import (recommend)
-import isString from '@cycjimmy/awesome-js-funcs/esm/judgeBasic/isString';
-const isString = require('@cycjimmy/awesome-js-funcs/cjs/judgeBasic/isString.cjs').default;
-
-console.log(isString('string'));   // show true
+console.log(isString('string')) // show true
 ```
+
+Other entry points:
+
+- the whole collection: `import { isString } from '@cycjimmy/awesome-js-funcs'`
+- a single group: `import { isString } from '@cycjimmy/awesome-js-funcs/judgeBasic'`
+- CommonJS (Node.js `^22.18.0` or `>=24.11.0`): `const { isString } = require('@cycjimmy/awesome-js-funcs')`
+
+The single-function import is recommended: it yields the smallest bundle and
+the fastest link.
+
+### Migrating from v4
+
+v5 replaces the two build outputs (`esm/` + `cjs/`) with a single ESM tree under
+`dist/`, resolved through the `exports` field:
+
+| v4 | v5 |
+| --- | --- |
+| `@cycjimmy/awesome-js-funcs/esm/judgeBasic` | `@cycjimmy/awesome-js-funcs/judgeBasic` |
+| `@cycjimmy/awesome-js-funcs/esm/judgeBasic/isString` | `@cycjimmy/awesome-js-funcs/judgeBasic/isString` |
+| `@cycjimmy/awesome-js-funcs/cjs/judgeBasic/isString.cjs` | `require('@cycjimmy/awesome-js-funcs/judgeBasic/isString').default` |
+
+Because `exports` now gates every specifier, deep paths that are not listed
+there no longer resolve. `require()` returns the module namespace object: the
+root and group entries are namespaces you can destructure, while a
+single-function entry has to be read through `.default`. On runtimes outside
+`^22.18.0 || >=24.11.0`, use `await import(...)` instead of `require()`.
 
 ## Function Collection
 * judgeBasic

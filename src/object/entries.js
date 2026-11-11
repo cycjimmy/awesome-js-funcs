@@ -5,15 +5,15 @@
  */
 export default (obj) => {
   const replaceFunc = (o) => {
-    const arr = [];
+    const arr = []
     Object.keys(o).forEach((key) => {
-      arr.push([key, o[key]]);
-    });
-    return arr;
-  };
+      arr.push([key, o[key]])
+    })
+    return arr
+  }
 
   if (Object.entries) {
-    return Object.entries(obj);
+    return Object.entries(obj)
   }
-  return replaceFunc(obj);
-};
+  return replaceFunc(obj)
+}

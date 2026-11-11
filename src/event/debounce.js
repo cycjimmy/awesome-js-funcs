@@ -1,4 +1,4 @@
-/* eslint func-names: "off", prefer-rest-params: "off" */
+/* eslint prefer-rest-params: "off" */
 
 /**
  * debounce function
@@ -7,20 +7,20 @@
  * @param immediate whether to execute function immediately
  */
 export default (func, wait = 300, immediate = false) => {
-  let timeout;
+  let timeout
   return function () {
-    const callNow = immediate && !timeout;
+    const callNow = immediate && !timeout
 
     const later = () => {
-      timeout = null;
+      timeout = null
       if (!immediate) {
-        func.apply(this, arguments);
+        func.apply(this, arguments)
       }
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) {
-      func.apply(this, arguments);
     }
-  };
-};
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+    if (callNow) {
+      func.apply(this, arguments)
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import isString from '../judgeBasic/isString';
-import nodeListToArray from '../typeConversion/nodeListToArray';
+import isString from '../judgeBasic/isString.js'
+import nodeListToArray from '../typeConversion/nodeListToArray.js'
 
 export default class QueryAll {
   /**
@@ -8,15 +8,16 @@ export default class QueryAll {
    * @param context
    */
   constructor(selectorOrEls, context = document) {
-    let elements;
+    let elements
 
     if (isString(selectorOrEls)) {
-      elements = context.querySelectorAll(selectorOrEls);
-    } else {
-      elements = selectorOrEls;
+      elements = context.querySelectorAll(selectorOrEls)
+    }
+    else {
+      elements = selectorOrEls
     }
 
-    this.nodeList = nodeListToArray(elements);
+    this.nodeList = nodeListToArray(elements)
   }
 
   /**
@@ -26,15 +27,15 @@ export default class QueryAll {
    * @returns {QueryAll}
    */
   on(eventType, fn) {
-    const aEvents = eventType.split(' ');
+    const aEvents = eventType.split(' ')
 
     this.nodeList.forEach((el) => {
       aEvents.forEach((event) => {
-        el.addEventListener(event, fn);
-      });
-    });
+        el.addEventListener(event, fn)
+      })
+    })
 
-    return this;
+    return this
   }
 
   /**
@@ -45,14 +46,14 @@ export default class QueryAll {
   addClass(className) {
     this.nodeList.forEach((el) => {
       if (el.classList) {
-        el.classList.add(className);
-      } else {
-        // eslint-disable-next-line no-param-reassign
-        el.className += ` ${className}`;
+        el.classList.add(className)
       }
-    });
+      else {
+        el.className += ` ${className}`
+      }
+    })
 
-    return this;
+    return this
   }
 
   /**
@@ -63,14 +64,14 @@ export default class QueryAll {
   removeClass(className) {
     this.nodeList.forEach((el) => {
       if (el.classList) {
-        el.classList.remove(className);
-      } else {
-        // eslint-disable-next-line no-param-reassign
-        el.className = el.className.replace(new RegExp(`(^|\\b)${className.split(' ').join('|')}(\\b|$)`, 'gi'), ' ');
+        el.classList.remove(className)
       }
-    });
+      else {
+        el.className = el.className.replace(new RegExp(`(^|\\b)${className.split(' ').join('|')}(\\b|$)`, 'gi'), ' ')
+      }
+    })
 
-    return this;
+    return this
   }
 
   /**
@@ -81,13 +82,14 @@ export default class QueryAll {
   hasClass(className) {
     this.nodeList.forEach((el) => {
       if (el.classList) {
-        el.classList.contains(className);
-      } else {
-        new RegExp(`(^| )${className}( |$)`, 'gi').test(el.className);
+        el.classList.contains(className)
       }
-    });
+      else {
+        new RegExp(`(^| )${className}( |$)`, 'gi').test(el.className)
+      }
+    })
 
-    return this;
+    return this
   }
 
   /**
@@ -95,7 +97,7 @@ export default class QueryAll {
    */
   remove() {
     this.nodeList.forEach((el) => {
-      el.parentNode.removeChild(el);
-    });
+      el.parentNode.removeChild(el)
+    })
   }
 }
