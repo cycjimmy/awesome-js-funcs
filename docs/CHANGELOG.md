@@ -1,3 +1,30 @@
+# [5.0.0](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.11...v5.0.0) (2026-11-11)
+
+
+* feat!: ship an ESM-only build and refresh the toolchain ([c3fd483](https://github.com/cycjimmy/awesome-js-funcs/commit/c3fd483ffd027fe3630f7c2712c9d5caeb7c0f0a))
+
+
+### BREAKING CHANGES
+
+* the package no longer ships a CommonJS build.
+`main`/`module`/`exports` now point at `dist/`, the old `/esm/*` and
+`/cjs/*` deep paths are gone, and consumers must use the new `exports`
+map. `require()` keeps working on Node.js `^22.18.0` and `>=24.11.0`
+through the built-in `require(esm)` support; older runtimes must switch
+to `import()`.
+
+- build: publish sources directly, drop Babel, cross-env and the .cjs
+  transform plus the extension completion task
+- build: add .js extensions to every relative specifier so the output
+  resolves natively under Node ESM
+- deps: replace eslint-config-airbnb-base with @antfu/eslint-config on
+  ESLint 10 and migrate to a flat config that pins src/ to ES2017
+- ci: split lint from the packaging step, add a Node 22/24 matrix, a
+  dry-run release gate and a single summary check
+- ci: add the issue triage, stale issue and dependabot auto-merge bots
+- docs: refresh the issue/PR templates, document the v5 migration and
+  the release contract in CONTRIBUTING
+
 ## [4.0.11](https://github.com/cycjimmy/awesome-js-funcs/compare/v4.0.10...v4.0.11) (2026-10-19)
 
 

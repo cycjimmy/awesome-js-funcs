@@ -1,7 +1,7 @@
 {
   "name": "@cycjimmy/awesome-js-funcs",
   "type": "module",
-  "version": "4.0.11",
+  "version": "5.0.0",
   "description": "Personal collection of javascript functions often used.",
   "author": "cycjimmy <cycjimmy@gmail.com> (https://github.com/cycjimmy)",
   "license": "MIT",
