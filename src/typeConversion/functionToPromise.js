@@ -1,4 +1,4 @@
-import isPromise from '../judgeBasic/isPromise';
+import isPromise from '../judgeBasic/isPromise.js'
 
 /**
  * function to promise
@@ -8,12 +8,11 @@ import isPromise from '../judgeBasic/isPromise';
  */
 export default (normalFunction, timeout = 0) => {
   if (isPromise(normalFunction)) {
-    return normalFunction;
+    return normalFunction
   }
 
-  // eslint-disable-next-line no-undef
   return new Promise((resolve) => {
-    normalFunction();
-    setTimeout(resolve, timeout);
-  });
-};
+    normalFunction()
+    setTimeout(resolve, timeout)
+  })
+}

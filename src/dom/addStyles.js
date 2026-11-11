@@ -1,4 +1,4 @@
-import entries from '../object/entries';
+import entries from '../object/entries.js'
 
 /**
  * element add styles
@@ -7,9 +7,10 @@ import entries from '../object/entries';
  */
 export default (element, styles) => {
   entries(styles).forEach(([k, v]) => {
+    // Not Object.hasOwn: this file is shipped as-is and ES2022 is above the
+    // browser baseline the package still supports.
     if (Object.prototype.hasOwnProperty.call(styles, k)) {
-      // eslint-disable-next-line no-param-reassign
-      element.style[k] = v;
+      element.style[k] = v
     }
-  });
-};
+  })
+}

@@ -4,7 +4,7 @@
  * @return {boolean}
  */
 export default (e) => {
-  window.event.returnValue = false;
-  e.preventDefault();
-  return false;
-};
+  window.event.returnValue = false
+  e.preventDefault()
+  return false
+}

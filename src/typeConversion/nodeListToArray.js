@@ -1,5 +1,5 @@
-import isNodeList from '../judgeBasic/isNodeList';
-import isArray from '../judgeBasic/isArray';
+import isArray from '../judgeBasic/isArray.js'
+import isNodeList from '../judgeBasic/isNodeList.js'
 
 /**
  * nodeList into array
@@ -8,12 +8,15 @@ import isArray from '../judgeBasic/isArray';
  */
 export default (nodeList) => {
   if (isArray(nodeList)) {
-    return nodeList;
+    return nodeList
   }
 
   if (!isNodeList(nodeList)) {
-    return new Array(nodeList);
+    // Intent: wrap the single value in a one-element array.
+    return Array.of(nodeList)
   }
 
-  return Array.from ? Array.from(nodeList) : Array.prototype.slice.call(nodeList);
-};
+  return Array.from
+    ? Array.from(nodeList)
+    : Array.prototype.slice.call(nodeList)
+}

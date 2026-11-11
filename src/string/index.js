@@ -1,3 +1,3 @@
-export { default as trim } from './trim';
-export { default as firstUpperCase } from './firstUpperCase';
-export { default as midlineToCamel } from './midlineToCamel';
+export { default as firstUpperCase } from './firstUpperCase.js'
+export { default as midlineToCamel } from './midlineToCamel.js'
+export { default as trim } from './trim.js'

@@ -1,8 +1,8 @@
-import chinesePhoneNumber from '../regExpression/chinesePhoneNumber';
+import chinesePhoneNumber from '../regExpression/chinesePhoneNumber.js'
 
 /**
  * is Chinese phone number
  * @param sMobile
  * @returns {boolean}
  */
-export default (sMobile) => chinesePhoneNumber().test(sMobile);
+export default sMobile => chinesePhoneNumber().test(sMobile)

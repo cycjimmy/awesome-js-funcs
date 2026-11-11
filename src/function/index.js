@@ -1,1 +1,1 @@
-export { default as delayForPromise } from './delayForPromise';
+export { default as delayForPromise } from './delayForPromise.js'

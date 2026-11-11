@@ -14,10 +14,10 @@
  * }}
  */
 export default () => {
-  const ua = navigator.userAgent;
-  const isIE = /compatible/gi.test(ua) && /MSIE/gi.test(ua);
-  const isEdge = /Edge/gi.test(ua) && !isIE;
-  const isIE11 = /Trident/gi.test(ua) && /rv:11\.0/gi.test(ua);
+  const ua = navigator.userAgent
+  const isIE = /compatible/gi.test(ua) && /MSIE/gi.test(ua)
+  const isEdge = /Edge/gi.test(ua) && !isIE
+  const isIE11 = /Trident/gi.test(ua) && /rv:11\.0/gi.test(ua)
 
   return {
     userAgent: ua,
@@ -31,17 +31,17 @@ export default () => {
     isEdge,
     ieVersion: (() => {
       if (isIE11) {
-        return '11';
+        return '11'
       }
 
       if (isEdge) {
-        return 'edge';
+        return 'edge'
       }
 
       if (isIE) {
-        const reIE = /MSIE (\d+\.\d+);/;
-        reIE.test(ua);
-        const fIEVersion = parseFloat(RegExp.$1);
+        const reIE = /MSIE (\d+\.\d+);/
+        reIE.test(ua)
+        const fIEVersion = Number.parseFloat(RegExp.$1)
 
         switch (fIEVersion) {
           case 6:
@@ -49,14 +49,14 @@ export default () => {
           case 8:
           case 9:
           case 10:
-            return `${fIEVersion}`;
+            return `${fIEVersion}`
 
           default:
-            return '<6';
+            return '<6'
         }
       }
 
-      return '-1';
+      return '-1'
     })(),
-  };
-};
+  }
+}
