@@ -20,8 +20,13 @@ on:
       - alpha
       - beta
 
+  # Daily rather than weekly. A merge performed by a workflow (any
+  # `dependabotAutoMerge.yml` merge, which runs `gh pr merge` with
+  # `GITHUB_TOKEN`) does not fire a `push` event, so nothing verifies `main`
+  # after those merges. This schedule is the only run that sees the real `main`
+  # in that case, so it is kept to one day instead of one week.
   schedule:
-    - cron: 0 2 * * 0
+    - cron: 0 2 * * *
 
 jobs:
   test:
